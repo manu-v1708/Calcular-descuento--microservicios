@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Descuentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card">
+            <div class="row">
+                <label>codigo</label>
+                <input type="text" id="codigo" placeholder="alfanumerico">
+            </div>
+            <div class="row">
+                <label>nombre</label>
+                <input type="text" id="nombre" placeholder="letras">
+            </div>
+            <div class="row">
+                <label>costo Base</label>
+                <input type="number" id="costoBase" placeholder="numerico">
+            </div>
+            <div class="row">
+                <label>descuentos</label>
+                <input type="number" id="descuentos" placeholder="% de descuento">
+            </div>
+            <div class="row">
+                <label>IVA</label>
+                <input type="number" id="iva" placeholder="% de IVA">
+            </div>
+            
+            <button id="btnCalcular">Calcular</button>
+
+            <div id="box-resultado" class="result-box">
+                <p>Total: <span id="valorTotal">0.00</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
