@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Microservicio de Descuentos",
+    "description": "Calcula costos finales con IVA y descuentos aplicados.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/calcular": {
+      "post": {
+        "summary": "Calcula el precio final",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "costoBase": { "type": "number" },
+                  "iva": { "type": "number" },
+                  "descuentos": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Cálculo exitoso" },
+          "404": { "description": "Datos no válidos" }
+        }
+      }
+    }
+  }
+}
