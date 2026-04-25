@@ -6,7 +6,7 @@ btn.addEventListener('click', async () => {
     const descuentos = document.getElementById('descuentos').value;
 
     // IMPORTANTE: Cambia esta URL por la que te de Render después de desplegar
-    const API_URL = "https://calcular-descuento-microservicios.onrender.com";
+    const API_URL = "https://calcular-descuento-microservicios.onrender.com/calcular";
 
     try {
         const response = await fetch(API_URL, {
